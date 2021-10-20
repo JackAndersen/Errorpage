@@ -115,6 +115,7 @@
   right: 20px;
   top: 210px;
   animation: spin 6s infinite linear;
+  animation: hoververt 2s infinite ease-in-out alternate;
 }
 
 @keyframes spin {
@@ -125,6 +126,14 @@
     transform: rotateZ(360deg);
   }
 }
+
+@keyframes hoververt {
+  0% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-3px);
+  }
 
 @media (max-width: 600px) {
   .permission_denied h1 {
