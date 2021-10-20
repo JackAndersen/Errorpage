@@ -114,18 +114,17 @@
   position: absolute;
   right: 20px;
   top: 210px;
-  animation: hoververt 6s infinite linear;
+  animation: spin 6s infinite linear;
 }
 
-@keyframes hoververt {
+@keyframes spin {
   0% {
-    transform: translate3d(3px, 3px, 0px);
-    transform: rotateZ(0deg)
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: translate3d(-3px, -3px, 0px);
     transform: rotateZ(360deg);
   }
+}
 
 @media (max-width: 600px) {
   .permission_denied h1 {
