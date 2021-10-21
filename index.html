@@ -110,19 +110,26 @@
 }
 
 #astronaut {
-  width: 47px;
+  width: 55px;
   position: absolute;
-  right: 20px;
+  right: 30px;
   top: 210px;
-  animation: spin 6s infinite linear;
+	-webkit-animation: rotate-scale-down 8s infinite linear both;
+	        animation: rotate-scale-down 8s infinite linear both;
 }
 
-@keyframes spin {
+@keyframes rotate-scale-down {
   0% {
-    transform: rotateZ(0deg);
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
   }
 }
 
